@@ -2,7 +2,6 @@ import { useCurrentLesson, usePlayStore } from '../store'
 
 export function Header() {
   const { currentLesson, currentModule } = useCurrentLesson()
-  // const isCourseLoading = useAppSelector((state) => state.player.isLoading)
 
   const isLoading = usePlayStore((state) => state.isLoading)
 

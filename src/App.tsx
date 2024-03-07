@@ -1,8 +1,14 @@
+import { ThemeProvider } from 'components/theme-provider'
+import { Home } from './pages/Home'
 import './styles/global.css'
-import { Player } from './pages/Player'
+// import { Player } from './pages/Player'
 
 function App() {
-  return <Player />
+  return (
+    <ThemeProvider defaultTheme="system" storageKey="app-test">
+      <Home />
+    </ThemeProvider>
+  )
 }
 
 export default App
